@@ -1,0 +1,11 @@
+.bg {
+  background: rgb(175,103,233);
+  background: linear-gradient(225deg, rgba(175,103,233,1) 0%, rgba(101,101,231,1) 100%);
+}
+.wrapper {
+  background: white;
+  border-radius: 20px;
+}
+.fixed {
+  position: fixed;
+}
