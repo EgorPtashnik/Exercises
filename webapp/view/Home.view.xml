@@ -1,7 +1,41 @@
 <mvc:View controllerName='ui5.template.controller.Home' displayBlock='true'
   xmlns='sap.m'
+  xmlns:core='sap.ui.core'
   xmlns:mvc='sap.ui.core.mvc'>
-  <Page showHeader='false'>
 
+  <Page showHeader='false'>
+    <VBox fitContainer='true' justifyContent='Center' alignItems='Center'>
+      <HBox width='900px' class='wrapper'>
+        <Image class='img' width='25rem' src='assets/drawers.jpg'/>
+        <VBox wrap='Wrap' class='sapUiLargeMargin' justifyContent='SpaceBetween'>
+          <VBox>
+            <Title wrapping='true' titleStyle='H2' text='Shift the overall look and feel by adding these wonderful touches to furniture in your home'/>
+            <Text text="Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete"/>
+          </VBox>
+          <HBox justifyContent='SpaceBetween' alignItems='Center'>
+            <HBox alignItems='Center'>
+              <Avatar src='assets/avatar-michelle.jpg'/>
+              <VBox class='sapUiSmallMarginBegin'>
+                <Text class='name' text='Michelle Appleton'/>
+                <Text class='date' text='28 Jun 2020'/>
+              </VBox>
+            </HBox>
+            <Button press='showActions' type='Unstyled' class='btn' icon='sap-icon://action'/>
+          </HBox>
+        </VBox>
+      </HBox>
+
+      <dependents>
+        <Popover showHeader='false' id='idPopover' placement='Top'>
+          <HBox class='dark_bg' alignItems='Center'>
+            <Text class='menu_text sapUiTinyMarginBegin' text='SHARE'/>
+            <Button type='Unstyled' class='menu_btn sapUiTinyMarginBegin' icon='assets/icon-facebook.svg'/>
+            <Button type='Unstyled' class='menu_btn sapUiTinyMarginBegin' icon='assets/icon-twitter.svg'/>
+            <Button type='Unstyled' class='menu_btn sapUiTinyMarginBeginEnd' icon='assets/icon-pinterest.svg'/>
+          </HBox>
+        </Popover>
+      </dependents>
+    </VBox>
   </Page>
+
 </mvc:View>
