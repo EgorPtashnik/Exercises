@@ -63,14 +63,21 @@
           "name": "home",
           "pattern": "",
           "target": "home"
+        }, {
+          "name": "idComingSoon",
+          "pattern": "idComingSoon",
+          "target": "idComingSoon"
         }],
         "targets": {
           "home": {
             "viewType": "XML",
             "viewName": "Home"
+          },
+          "idComingSoon": {
+            "viewType": "XML",
+            "viewName": "Challenges.ComingSoon"
           }
         }
       }
     }
   }
-  

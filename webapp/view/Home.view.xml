@@ -1,7 +1,9 @@
 <mvc:View controllerName='ui5.template.controller.Home' displayBlock='true'
   xmlns='sap.m'
   xmlns:mvc='sap.ui.core.mvc'>
-  <Page showHeader='false'>
-
+  <Page title='Challenges List'>
+    <List items='{state>/pages}'>
+      <StandardListItem title='{state>name}' type='Active' press='onGoToChallenge(${state>id})'/>
+    </List>
   </Page>
 </mvc:View>
