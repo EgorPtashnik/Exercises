@@ -1,7 +1,39 @@
 <mvc:View controllerName='ui5.template.controller.Home' displayBlock='true'
   xmlns='sap.m'
+  xmlns:f='sap.f'
+  xmlns:card='sap.f.cards'
   xmlns:mvc='sap.ui.core.mvc'>
   <Page showHeader='false'>
-
+    <HBox wrap='Wrap'>
+      <f:Card width='300px' class='sapUiTinyMargin'>
+        <f:header>
+          <card:Header title='Fylo' iconSrc='sap-icon://dimension'/>
+        </f:header>
+        <f:content>
+          <HBox class='sapUiTinyMargin' wrap='Wrap'>
+            <Button class='sapUiTinyMarginEnd' icon='sap-icon://document'/>
+            <Button class='sapUiTinyMarginEnd' icon='sap-icon://folder-blank'/>
+            <Button icon='sap-icon://upload-to-cloud'/>
+            <Input type='Number' value='{state>/usedMemory}'/>
+            <Label text='Change ammount of used data'/>
+          </HBox>
+        </f:content>
+      </f:Card>
+      <f:Card width='300px' class='sapUiTinyMargin'>
+        <f:header>
+          <card:Header iconSrc='sap-icon://bar-chart' title='Statistics'/>
+        </f:header>
+        <f:content>
+          <VBox width='100%' class='sapUiTinyMargin'>
+            <Title text="You've used {=${state>/usedMemory} || 0} GB of your storage"/>
+            <ProgressIndicator state='Warning' percentValue='{=${state>/usedMemory} / 10}'/>
+            <HBox justifyContent='SpaceBetween'>
+              <Title text='0 GB'/>
+              <Title text='1000 GB'/>
+            </HBox>
+          </VBox>
+        </f:content>
+      </f:Card>
+    </HBox>
   </Page>
 </mvc:View>

@@ -4,11 +4,10 @@ sap.ui.define([
     'sap/ui/core/UIComponent',
   ], function(Controller, History, UIComponent) {
     "use strict";
-  
+
     return Controller.extend("client.controller.BaseController", {
       onInit() {
         this.oDeviceModel = this.getOwnerComponent().getModel('device');
-        this.getView().addStyleClass(this._getDensityClass());
       },
       _getDensityClass() {
         this.oDeviceModel = this.getOwnerComponent().getModel('device');
