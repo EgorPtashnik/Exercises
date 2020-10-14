@@ -2,6 +2,26 @@
   xmlns='sap.m'
   xmlns:mvc='sap.ui.core.mvc'>
   <Page showHeader='false'>
-
+    <Carousel loop='true' showPageIndicator='false' height='{=${device>/support/touch}? "100%" : "500px"}' pages='{state>/}'  class='sapUiContentPadding'>
+      <ScrollContainer vertical='true' horizontal='false'>
+      <HBox wrap='Wrap' justifyContent='SpaceBetween' alignItems='Center' class='bg'>
+        <VBox visible='{=!${device>/support/touch}}'>
+          <Title width='400px' titleStyle='H4' wrapping='true' text='{state>desc}'/>
+          <HBox>
+            <Text text='{state>name}' class='bold sapUiTinyMarginEnd'/>
+            <Text class='who' text='{state>who}'/>
+          </HBox>
+        </VBox>
+        <Image width='{=${device>/support/touch}? "250px" : ""}' src='img/{state>img}'/>
+        <VBox visible='{device>/support/touch}'>
+          <Title width='250px' titleStyle='H4' wrapping='true' text='{state>desc}'/>
+          <HBox>
+            <Text text='{state>name}' class='bold sapUiTinyMarginEnd'/>
+            <Text class='who' text='{state>who}'/>
+          </HBox>
+        </VBox>
+      </HBox>
+    </ScrollContainer>
+    </Carousel>
   </Page>
 </mvc:View>

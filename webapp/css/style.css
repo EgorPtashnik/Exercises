@@ -1,0 +1,10 @@
+.bg {
+  background: white;
+  padding: 1rem;
+}
+.bold {
+  font-weight: bold;
+}
+.who {
+  color: rgba(0,0,0,0.3);
+}
