@@ -2,6 +2,50 @@
   xmlns='sap.m'
   xmlns:mvc='sap.ui.core.mvc'>
   <Page showHeader='false'>
+    <Text class='title_text sapUiLargeMarginTop' textAlign='Center' width='100%' text='Reliable, efficient delivery'/>
+    <Text class='title_text text_bold sapUiSmallMarginTop' textAlign='Center' width='100%' text='Powered by Technology'/>
+    <Text class='text2 sapUiLargeMarginTop' width='100%' textAlign='Center' text='Our Artificial Intelligence powered tools use millions of project data points
+    to ensure that your project is successful'/>
 
+    <HBox width='100%' alignItems='Center' justifyContent='Center' class='sapUiLargeMarginTop' wrap='Wrap'>
+      <VBox class='card first sapUiSmallMargin'>
+        <Title titleStyle='H2' text='Supervisor'/>
+        <Text class='text sapUiSmallMarginTop' text='Monitors activity to identify project roadblocks'/>
+        <Image class='sapUiLargeMarginTop' src='img/icon-supervisor.svg'>
+          <layoutData>
+            <FlexItemData alignSelf='End'/>
+          </layoutData>
+        </Image>
+      </VBox>
+      <VBox>
+        <VBox class='card second sapUiSmallMargin'>
+          <Title titleStyle='H2'  text='Team Builder'/>
+          <Text class='text sapUiSmallMarginTop' text='Scans our talent network to create the optimal team for your project'/>
+          <Image class='sapUiLargeMarginTop' src='img/icon-team-builder.svg'>
+            <layoutData>
+              <FlexItemData alignSelf='End'/>
+            </layoutData>
+          </Image>
+        </VBox>
+        <VBox class='card third sapUiSmallMargin'>
+          <Title titleStyle='H2'  text='Karma'/>
+          <Text class='text sapUiSmallMarginTop' text='Regularly evaluates our talent to ensure quality'/>
+          <Image class='sapUiLargeMarginTop' src='img/icon-karma.svg'>
+            <layoutData>
+              <FlexItemData alignSelf='End'/>
+            </layoutData>
+          </Image>
+        </VBox>
+      </VBox>
+      <VBox class='card fourth sapUiSmallMargin'>
+        <Title titleStyle='H2'  text='Calculator'/>
+        <Text class='text sapUiSmallMarginTop' text='Uses data from past projects to provide better delivery estimates'/>
+        <Image class='sapUiLargeMarginTop' src='img/icon-calculator.svg'>
+          <layoutData>
+            <FlexItemData alignSelf='End'/>
+          </layoutData>
+        </Image>
+      </VBox>
+    </HBox>
   </Page>
 </mvc:View>

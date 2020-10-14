@@ -1,0 +1,26 @@
+.title_text {
+  font-size: 2rem;
+  font-weight: 0;
+}
+.text_bold {
+  font-weight: bold;;
+}
+.text2 {
+  color: rgba(0,0,0,0.5);
+  font-size: 15px;
+}
+.text {
+  color: rgba(0,0,0,0.5);
+  font-size: 15px;
+  max-width: 300px;
+}
+.card {
+  background-color: white;
+  border-radius: 5px;
+  padding: 3rem;
+  box-shadow: 0 1rem 1rem rgba(0,0,0,0.2);
+}
+.first {border-top: 4px solid hsl(180, 62%, 55%)}
+.second {border-top: 4px solid hsl(0, 78%, 62%)}
+.third {border-top: 4px solid hsl(34, 97%, 64%)}
+.fourth {border-top: 4px solid hsl(212, 86%, 64%)}
