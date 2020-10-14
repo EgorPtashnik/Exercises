@@ -21,7 +21,7 @@
       </f:Card>
       <f:Card width='300px' class='sapUiTinyMargin'>
         <f:header>
-          <card:Header iconSrc='sap-icon://bar-chart' title='Statistics'/>
+          <card:Header iconSrc='sap-icon://bar-chart' title='{=1000 - ${state>/usedMemory}} GB Left'/>
         </f:header>
         <f:content>
           <VBox width='100%' class='sapUiTinyMargin'>
