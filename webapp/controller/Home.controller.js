@@ -6,8 +6,9 @@ sap.ui.define([
     return BaseController.extend('ui5.template.controller.Home', {
       onInit() {
       },
-      onGoToChallenge(sViewId) {
+      onGoToChallenge(sViewId, sViewName) {
         this.navTo(sViewId);
+        this.getModel('state').setProperty('/currentPageName', sViewName);
       }
     });
   });

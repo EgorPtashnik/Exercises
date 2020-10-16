@@ -67,6 +67,18 @@
           "name": "idComingSoon",
           "pattern": "idComingSoon",
           "target": "idComingSoon"
+        }, {
+          "name": "idIntro",
+          "pattern": "idIntro",
+          "target": "idIntro"
+        }, {
+          "name": "idGrid",
+          "pattern": "idGrid",
+          "target": "idGrid"
+        }, {
+          "name": "idComingSoon2",
+          "pattern": "idComingSoon2",
+          "target": "idComingSoon2"
         }],
         "targets": {
           "home": {
@@ -76,6 +88,18 @@
           "idComingSoon": {
             "viewType": "XML",
             "viewName": "Challenges.ComingSoon"
+          },
+          "idIntro": {
+            "viewType": "XML",
+            "viewName": "Challenges.Intro"
+          },
+          "idGrid": {
+            "viewType": "XML",
+            "viewName": "Challenges.Grid"
+          },
+          "idComingSoon2": {
+            "viewType": "XML",
+            "viewName": "Challenges.ComingSoon2"
           }
         }
       }

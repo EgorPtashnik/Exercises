@@ -3,7 +3,7 @@
   xmlns:mvc='sap.ui.core.mvc'>
   <Page title='Challenges List'>
     <List items='{state>/pages}'>
-      <StandardListItem title='{state>name}' type='Active' press='onGoToChallenge(${state>id})'/>
+      <StandardListItem title='{state>name}' type='Active' press='onGoToChallenge(${state>id}, ${state>name})'/>
     </List>
   </Page>
 </mvc:View>

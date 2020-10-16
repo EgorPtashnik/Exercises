@@ -1,0 +1,22 @@
+<mvc:View controllerName='ui5.template.controller.Home' displayBlock='true'
+  xmlns='sap.m'
+  xmlns:mvc='sap.ui.core.mvc'>
+  <Page showNavButton='true' navButtonPress='onNavBack' title='{state>/currentPageName}'>
+    <VBox alignItems='Center'>
+      <Image src='img/ComingSoon2/logo.svg' class='sapUiSmallMarginTop'/>
+      <Title textAlign='Center' wrapping='true' titleStyle='H1' text='We are launching soon!' class='sapUiMediumMarginTop'/>
+      <Title titleStyle='H4' text='Subscrive and get notified' class='sapUiTinyMarginTop'/>
+      <HBox wrap='Wrap' alignItems='Center' justifyContent='Center'>
+        <Input width='300px' type='Email' placeholder='Your email address' class='sapUiTinyMargin'/>
+        <Button width='300px' type='Emphasized' text='Notify Me' class='sapUiTinyMargin'/>
+      </HBox>
+      <Image class='sapUiSmallMarginTop' width='100vw' src='img/ComingSoon2/illustration-dashboard.png'/>
+      <HBox>
+        <Button icon='sap-icon://list' class='sapUiTinyMargin'/>
+        <Button icon='sap-icon://list' class='sapUiTinyMargin'/>
+        <Button icon='sap-icon://list' class='sapUiTinyMargin'/>
+      </HBox>
+      <Text text='@Copyright Ping. All rights reserverd.'/>
+    </VBox>
+  </Page>
+</mvc:View>

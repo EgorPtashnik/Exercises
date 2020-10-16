@@ -1,0 +1,42 @@
+<mvc:View controllerName='ui5.template.controller.Home' displayBlock='true'
+  xmlns='sap.m'
+  xmlns:l='sap.ui.layout'
+  xmlns:mvc='sap.ui.core.mvc'>
+  <Page showNavButton='true' navButtonPress='onNavBack' title='{state>/currentPageName}'>
+    <VBox class='max_width sapUiLargeMargin'>
+      <l:BlockLayout background='Light'>
+        <l:BlockLayoutRow>
+          <l:BlockLayoutCell>
+            <l:VerticalLayout>
+              <Title wrapping='true' titleStyle='H1' text='Join our community'/>
+              <Title wrapping='true' titleStyle='H2' text='30-day, hassle-free moeny back guarantee'/>
+              <Text text='Gain access to our library of tutorials along with expres code reviews.'/>
+              <Text text='Perfect for any developers who are serious about honing their skills.'/>
+            </l:VerticalLayout>
+          </l:BlockLayoutCell>
+        </l:BlockLayoutRow>
+        <l:BlockLayoutRow>
+          <l:BlockLayoutCell width='1'>
+            <l:VerticalLayout>
+              <Title wrapping='true' titleStyle='H2' text='Monthly Subscription'/>
+              <Title wrapping='true' titleStyle='H1' text='$29'/>
+              <Text text='Full access for less than $1 a day.'/>
+              <Button type='Emphasized' text='Sign Up'/>
+            </l:VerticalLayout>
+          </l:BlockLayoutCell>
+          <l:BlockLayoutCell width='1'>
+            <l:VerticalLayout>
+              <Title wrapping='true' titleStyle='H2' text='Why Us'/>
+              <Text text='Tutorials by industry experts Peer &amp; expert code review'/>
+              <Text text='Coding exercises'/>
+              <Text text='Access to our GirHub repos'/>
+              <Text text='Community forum'/>
+              <Text text='Flashcard decks'/>
+              <Text text='New videos every week'/>
+            </l:VerticalLayout>
+          </l:BlockLayoutCell>
+        </l:BlockLayoutRow>
+      </l:BlockLayout>
+    </VBox>
+  </Page>
+</mvc:View>

@@ -1,26 +1,24 @@
 <mvc:View controllerName='ui5.template.controller.Home' displayBlock='true'
   xmlns='sap.m'
   xmlns:mvc='sap.ui.core.mvc'>
-  <Shell>
-    <Page showNavButton='true' navButtonPress='onNavBack' title='Base Apparel coming soon page'>
-      <HBox wrap='Wrap' class='coming_soon_bg' width='100%' justifyContent='{=${device>/support/touch}? "Center" : "SpaceAround"}'>
-        <VBox visible='{device>/support/touch}' class='sapUiSmallMarginTop'>
-          <Image src='img/ComingSoon/logo.svg'/>
-          <Image src='img/ComingSoon/hero-mobile.jpg'/>
-        </VBox>
-        <VBox class='sapUiLargeMargin'>
-          <Image src='img/ComingSoon/logo.svg' visible='{=!${device>/support/touch}}'/>
-          <Title text="WE'RE" titleStyle='H1' class='sapUiLargeMarginTop'/>
-          <Title text='COMING' titleStyle='H1'/>
-          <Title text='SOON' titleStyle='H1'/>
-          <Title width='375px' titleStyle='H3' wrapping='true' class='sapUiLargeMarginTop' text="Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals."/>
-          <HBox>
-            <Input placeholder='Email Address'/>
-            <Button type='Emphasized' icon='sap-icon://navigation-right-arrow'/>
-          </HBox>
-        </VBox>
-        <Image visible='{=!${device>/support/touch}}' src='img/ComingSoon/hero-desktop.jpg'/>
-      </HBox>
-    </Page>
-  </Shell>
+  <Page showNavButton='true' navButtonPress='onNavBack' title='{state>/currentPageName}'>
+    <HBox wrap='Wrap' class='coming_soon_bg' width='100%' justifyContent='{=${device>/support/touch}? "Center" : "SpaceAround"}'>
+      <VBox visible='{device>/support/touch}' class='sapUiSmallMarginTop'>
+        <Image src='img/ComingSoon/logo.svg'/>
+        <Image src='img/ComingSoon/hero-mobile.jpg'/>
+      </VBox>
+      <VBox class='sapUiLargeMargin'>
+        <Image src='img/ComingSoon/logo.svg' visible='{=!${device>/support/touch}}'/>
+        <Title text="WE'RE" titleStyle='H1' class='sapUiLargeMarginTop'/>
+        <Title text='COMING' titleStyle='H1'/>
+        <Title text='SOON' titleStyle='H1'/>
+        <Title width='375px' titleStyle='H3' wrapping='true' class='sapUiLargeMarginTop' text="Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals."/>
+        <HBox>
+          <Input placeholder='Email Address'/>
+          <Button type='Emphasized' icon='sap-icon://navigation-right-arrow'/>
+        </HBox>
+      </VBox>
+      <Image visible='{=!${device>/support/touch}}' src='img/ComingSoon/hero-desktop.jpg'/>
+    </HBox>
+  </Page>
 </mvc:View>

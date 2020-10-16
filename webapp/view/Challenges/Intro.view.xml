@@ -1,0 +1,31 @@
+<mvc:View controllerName='ui5.template.controller.Home' displayBlock='true'
+  xmlns='sap.m'
+  xmlns:mvc='sap.ui.core.mvc'>
+  <Page showNavButton='true' navButtonPress='onNavBack' title='{state>/currentPageName}'>
+    <HBox wrap='Wrap' justifyContent='SpaceAround' class='sapUiSmallMargin'>
+      <VBox class="sapUiMediumMarginTop">
+        <Title text='Learn to code by' titleStyle='H1'/>
+        <Title text='watching orders' titleStyle='H1'/>
+        <Text width='300px' text='See how experienced developers solve problems in real-time.
+        Watching scripted tutorials is great, but understanding how developers think
+        is invaluable.' class='sapUiMediumMarginTop'/>
+      </VBox>
+      <VBox>
+        <MessageStrip
+				text='Try it free 7 days then $20/mo. thereafter'
+				showIcon='true'
+        class="sapUiMediumMarginTop"/>
+        <VBox class='white_round_bg sapUiTinyMarginTop'>
+          <Input class='sapUiTinyMarginTop' placeholder='First Name'/>
+          <Input class='sapUiTinyMarginTop' placeholder='Last Name'/>
+          <Input class='sapUiTinyMarginTop' placeholder='Email Address'/>
+          <Input class='sapUiTinyMarginTop' placeholder='Password'/>
+          <Button width='100%' type='Emphasized' text='CLAIM YOUR FREE TRIAL'/>
+          <HBox alignItems='Center'>
+            <Text textAlign='Center' renderWhitespace='true' text='By clicking the button, you are agreeing to our Terms and Services'/>
+          </HBox>
+        </VBox>
+      </VBox>
+    </HBox>
+  </Page>
+</mvc:View>
